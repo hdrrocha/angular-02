@@ -8,7 +8,7 @@ angular.module('minhasDiretivas', [])
             titulo: '@'
         };
 
-        ddo.transclude = true;
+        ddo.transclude = true; // pra manter os elemntos filhos
         ddo.template  =
                     '<div class="panel panel-default">'
                         +'<div class="panel-heading">'
