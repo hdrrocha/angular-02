@@ -1,6 +1,7 @@
 //$scpe usado pra ter acesso ao scope do, $http é o responsavel por fazer requisicao ajax
 angular.module('alurapic').controller('FotosController', function ($scope, $http) {
     $scope.fotos = [];
+    $scope.filto = '';
 
     $http.get('v1/fotos')
         .success(function (fotos) {
